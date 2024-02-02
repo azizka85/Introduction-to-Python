@@ -23,8 +23,8 @@ def fib3(n: int, p: int, t: int) -> int:
     print(n, end=' ')
 
     if n == 0:
-        fib(1, 0, t)
+        fib3(1, 0, t)
     elif n == 1:
-        fib(1 + p, 1, t)
+        fib3(1 + p, 1, t)
     elif n + p < t:
-        fib(n + p, n, t)
+        fib3(n + p, n, t)
