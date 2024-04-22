@@ -19,7 +19,7 @@ def fib2(n):
         
     return result
 
-def fib3(n: int, p: int, t: int) -> int:
+def fib3(n: int, p: int, t: int):
     print(n, end=' ')
 
     if n == 0:
