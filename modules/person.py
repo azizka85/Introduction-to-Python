@@ -1,4 +1,4 @@
-class Person():
+class Person:
     name: str
     email: str
 
