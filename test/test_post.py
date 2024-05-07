@@ -1,3 +1,8 @@
+import os
+import sys
+
+sys.path.append(os.getcwd())
+
 import unittest
 from modules.test.like_repository import LikeRepository
 
@@ -9,3 +14,6 @@ class TestPost(unittest.TestCase):
             self.assertIsNotNone(like.post.author)
             self.assertIsNotNone(like.post.author.id)
             self.assertIsNot(like.post.author.id, 0)
+
+if __name__ == '__main__':
+    unittest.main()
